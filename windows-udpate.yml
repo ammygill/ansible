@@ -1,4 +1,3 @@
----
 
 - name: Using the windows update module for the first time 
   hosts: all 
@@ -10,5 +9,3 @@
       use_scheduled_task: yes
       reboot: yes
       reboot_timeout: 600
-      
----
