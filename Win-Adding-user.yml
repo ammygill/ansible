@@ -1,8 +1,13 @@
 - name: Adding the user to the Windows system
   hosts: all
   tasks: 
-   - name: Adding the user to the system
-     win_user:
+  - name: Create a new local group.
+    win_group:
+      name: Developers
+      description: Developers Group
+      state: present
+  - name: Adding the user to the system
+    win_user:
       name: redhat
       password: Google@123
       state: present
