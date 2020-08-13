@@ -7,12 +7,12 @@
     - Notepad++
   
   tasks:
-   - name: Chocolatey is installed
+   - name: Installing Chocolatey 
      win_chocolatey:
       name: chocolatey
       state: present
     
-   - name: Packages are installed
+   - name: Installing Packages
      win_chocolatey:
       name: "{{ packages }}"
       state: present
