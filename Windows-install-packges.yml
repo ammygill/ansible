@@ -3,8 +3,8 @@
   hosts: all
   vars:
   packages:
-  - git
-  - Notepad++
+   - git
+   - Notepad++
   
   tasks:
   - name: Chocolatey is installed
