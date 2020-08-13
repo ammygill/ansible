@@ -8,3 +8,9 @@
       src: C:\Users\Administrator\Desktop\testing.txt.txt
       dest: C:\Users\Administrator\Desktop\test.txt
       remote_src: yes
+      
+   - name: testing the seraching with win_find
+     win_find:
+      paths: C:\Users\Administrator\Desktop
+      hidden: yes
+      patterns: '*.txt'
