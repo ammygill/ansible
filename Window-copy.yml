@@ -1,5 +1,5 @@
 
-- name: testing the copy of the files
+- name: testing the copy/searching/modify of the files
   hosts: all 
   tasks: 
   
@@ -14,3 +14,9 @@
       paths: C:\Users\Administrator\Desktop
       hidden: yes
       patterns: '*.txt'
+   
+   - name: Modifying a line in the service file
+     win_lineinfile:
+      path: C:\Users\Administrator\Desktop\test.txt
+      regexp: '^testing'
+      line: '# line modified by ansible'
