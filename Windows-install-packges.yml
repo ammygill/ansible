@@ -4,7 +4,7 @@
   vars:
    packages:
     - git
-    - Notepad++
+    - notepadplusplus
   
   tasks:
    - name: Installing Chocolatey 
