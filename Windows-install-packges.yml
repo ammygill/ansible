@@ -17,4 +17,3 @@
       name: "{{ packages }}"
       state: present
       pinned: true
-      register: install_result
