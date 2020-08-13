@@ -1,0 +1,20 @@
+
+- name: Install packages on systems
+  hosts: all
+  vars:
+  packages:
+  - git
+  - Notepad++
+  
+  tasks:
+  - name: Chocolatey is installed
+    win_chocolatey:
+    name: chocolatey
+    state: present
+    
+  - name: Packages are installed
+    win_chocolatey:
+    name: "{{ packages }}"
+    state: present
+    pinned: true
+    register: install_result
