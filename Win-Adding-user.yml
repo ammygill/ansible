@@ -1,0 +1,12 @@
+- name: Adding the user to the Windows system
+  hosts: all
+  tasks: 
+   - name: Adding the user to the system
+     win_user:
+      name: redhat
+      password: redhat
+      state: present
+      groups:
+       - Users
+       - Developers
+      groups_action: replace
