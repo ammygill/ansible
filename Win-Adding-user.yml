@@ -4,7 +4,7 @@
    - name: Adding the user to the system
      win_user:
       name: redhat
-      password: RedHat1!
+      password: Google@123
       state: present
       groups:
        - Users
