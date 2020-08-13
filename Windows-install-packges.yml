@@ -7,14 +7,14 @@
     - Notepad++
   
   tasks:
-  - name: Chocolatey is installed
-    win_chocolatey:
-    name: chocolatey
-    state: present
+   - name: Chocolatey is installed
+     win_chocolatey:
+      name: chocolatey
+      state: present
     
-  - name: Packages are installed
-    win_chocolatey:
-    name: "{{ packages }}"
-    state: present
-    pinned: true
-    register: install_result
+   - name: Packages are installed
+     win_chocolatey:
+      name: "{{ packages }}"
+      state: present
+      pinned: true
+      register: install_result
