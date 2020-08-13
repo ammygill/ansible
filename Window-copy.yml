@@ -4,5 +4,5 @@
    - name: Copy a single file
      win_copy:
       src: C:\Users\Administrator\Desktop\testing.txt
-      dest: C:\test.txt
+      dest: C:\Users\Administrator\Desktop\test.txt
 
