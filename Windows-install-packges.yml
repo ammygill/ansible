@@ -2,9 +2,9 @@
 - name: Install packages on systems
   hosts: all
   vars:
-  packages:
-   - git
-   - Notepad++
+   packages:
+    - git
+    - Notepad++
   
   tasks:
   - name: Chocolatey is installed
