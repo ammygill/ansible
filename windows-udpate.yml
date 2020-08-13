@@ -1,0 +1,14 @@
+---
+
+- name: Using the windows update module for the first time 
+  hosts: all 
+  tasks:
+  - name: Install any critical updates, reboot if required 
+    win_updates:
+      category_names:
+       - CriticalUpdates
+      use_scheduled_task: yes
+      reboot: yes
+      reboot_timeout: 600
+      
+---
