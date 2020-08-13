@@ -1,0 +1,6 @@
+- name: Testing timezone changes 
+  hosts: all
+  tasks: 
+    - name: Set timezone to 'GMT Standard Time' (GMT)
+      win_timezone:
+        timezone: GMT Standard Time
