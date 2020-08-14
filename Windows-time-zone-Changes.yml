@@ -4,6 +4,4 @@
     - name: Set timezone to 'GMT Standard Time' (GMT)
       win_timezone:
         timezone: GMT Standard Time
-    - name: Testing of JOB variable 
-      debug:
-       msg: "This is testing of {{ testing }} variables in job template "
+   
