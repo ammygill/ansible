@@ -6,4 +6,4 @@
         timezone: GMT Standard Time
     - name: Testing of JOB variable 
       debug:
-       msg: "This is testing of variables in job template '{{testing}}' done."
+       msg: "This is testing of {{ testing }} variables in job template "
