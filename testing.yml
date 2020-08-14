@@ -1,0 +1,6 @@
+- name: testing of the webhook 
+  hosts: all
+  tasks:
+   - name: using the debug module 
+     debug: 
+       msg: "testing done for the webhook"
