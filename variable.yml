@@ -1,0 +1,6 @@
+- name: testing variables 
+  hosts: all
+  tasks:
+  - name: testing variables
+    debug:
+     msg: this is a {{ test }} testing of a {{ var }}
