@@ -1,6 +1,6 @@
 ---
 - name: testing of the play 
-  hosts: localhost  
+  hosts: all 
   remote_user: ec2-user
   tasks: 
   - name: Sync nrpe nagiosplug custom files
