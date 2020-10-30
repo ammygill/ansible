@@ -7,5 +7,6 @@
      src: "/opt/test/abc.txt"
      dest: "/opt/test/xyz.txt"
      rsync_opts:
-      - "--chown=ec2-user:root"
+      - "--usermap=*:ec2-user"
+      - "--groupmap=*:root"
       - "--chmod=0775"
