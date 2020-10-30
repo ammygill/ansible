@@ -1,8 +1,7 @@
 ---
 - name: testing of the play 
   hosts: localhost
-  gather_facts: false 
-  become: true 
+  gather_facts: false  
   tasks: 
   - name: Sync nrpe nagiosplug custom files
     synchronize:
