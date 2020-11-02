@@ -1,6 +1,6 @@
 ---
 - name: testing of the play 
-  hosts: ec2-13-232-10-66.ap-south-1.compute.amazonaws.com
+  hosts: all
   tasks: 
   - name: Sync nrpe nagiosplug custom files
     synchronize:
