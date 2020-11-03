@@ -4,7 +4,7 @@
   tasks: 
   - name: Sync nrpe nagiosplug custom files
     synchronize:
-     src: "opt/test/abcd.txt"
+     src: "/opt/test/abcd.txt"
      dest: "/opt/test/xyz.txt"
      rsync_opts:
       - "--usermap=*:ec2-user"
