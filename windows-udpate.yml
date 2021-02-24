@@ -6,6 +6,8 @@
     win_updates:
       category_names:
        - CriticalUpdates
+       - SecurityUpdates
+       - UpdateRollups
       use_scheduled_task: yes
       reboot: yes
       reboot_timeout: 600
