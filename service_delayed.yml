@@ -5,4 +5,4 @@
       win_service:
         name: AmazonSSMAgent
         state: started
-        start_mode: delayed
+        start_mode: manual
