@@ -3,6 +3,6 @@
   tasks:
     - name: LogR System Monitor Service
       win_service:
-        name: amazon-ssm-agent
+        name: AmazonSSMAgent
         state: started
         start_mode: delayed
