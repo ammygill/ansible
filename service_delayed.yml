@@ -1,0 +1,8 @@
+- name: Start LogR system monitor service delayed
+  hosts: all
+  tasks:
+    - name: LogR System Monitor Service
+      win_service:
+        name: scsm
+        state: started
+        start_mode: delayed
