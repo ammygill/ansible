@@ -1,0 +1,8 @@
+---
+- name: testing the palybook fact data
+  hosts: localhost
+  tasks: 
+  - name: testing wth the debug
+    debug:
+     msg: "/etc/sysconfig/whatever/ifcfg-{{ ansible_default_ipv4.interface }}" 
+
