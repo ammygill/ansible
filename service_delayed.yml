@@ -6,5 +6,5 @@
       start_mode: delayed
      register: delayed_task
    - name: workaround for delayed not appearing in the GUI
-     win_command: sc.exe config MyService start= delayed-auto
+     win_command: sc.exe config AppReadiness start= delayed-auto
      when: delayed_task is changed
