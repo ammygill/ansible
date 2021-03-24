@@ -1,8 +1,10 @@
 - name: Start LogR system monitor service delayed
   hosts: all
   tasks:
-    - name: LogR System Monitor Service
-      win_service:
-        name: VaultSvc
-        state: started
-        start_mode: delayed
+   - win_service:
+      name: MyService
+      start_mode: delayed
+     register: delayed_task
+   - name: workaround for delayed not appearing in the GUI
+     win_command: sc.exe config MyService start= delayed-auto
+     when: delayed_task is changed
