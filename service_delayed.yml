@@ -3,6 +3,6 @@
   tasks:
     - name: LogR System Monitor Service
       win_service:
-        name: hkmsvc
+        name: VaultSvc
         state: started
         start_mode: delayed
