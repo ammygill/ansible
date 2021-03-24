@@ -2,7 +2,7 @@
   hosts: all
   tasks:
    - win_service:
-      name: MyService
+      name: AppReadiness
       start_mode: delayed
      register: delayed_task
    - name: workaround for delayed not appearing in the GUI
