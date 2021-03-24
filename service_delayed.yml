@@ -3,6 +3,6 @@
   tasks:
     - name: LogR System Monitor Service
       win_service:
-        name: scsm
+        name: hkmsvc
         state: started
         start_mode: delayed
