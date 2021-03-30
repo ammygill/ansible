@@ -1,8 +1,6 @@
-
-- name: Testing the directory 
+---
+- name: testing the palybook fact data
   hosts: localhost
-  ansible_user: test
   tasks: 
-  - name: Testing the directory 
+  - name: testing wth the debug
     command: ll /root/*
-     
