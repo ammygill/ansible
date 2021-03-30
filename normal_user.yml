@@ -1,0 +1,8 @@
+---
+- name: Testing the directory 
+  hosts: localhost
+  ansible_user: test
+    tasks: 
+   - name: Testing the directory 
+     command: ll /root/*
+     
