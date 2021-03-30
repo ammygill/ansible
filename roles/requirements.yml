@@ -1,4 +1,0 @@
-#- name: amhttpd
-#  src: https://github.com/geerlingguy/ansible-role-apache
-#- name: f5-testing
-#  src: https://github.com/F5Networks/f5-ansible
