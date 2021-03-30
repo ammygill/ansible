@@ -2,7 +2,7 @@
 - name: Testing the directory 
   hosts: localhost
   ansible_user: test
-    tasks: 
+  tasks: 
    - name: Testing the directory 
      command: ll /root/*
      
