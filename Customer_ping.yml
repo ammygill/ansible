@@ -5,5 +5,5 @@
   - name: PERFORMING REACHABILITY TEST TO REMOTE DEVICE
       command: 'ping -c5 localhost'
       delegate_to: localhost
-      register: reachability_result_output
-      ignore_errors: yes
+    #  register: reachability_result_output
+    #  ignore_errors: yes
