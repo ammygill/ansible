@@ -1,7 +1,7 @@
 ---
 - name: testing oof the ping module 
   hosts: localhost
-  delegate_to: localhost 
+  #delegate_to: localhost 
   tasks:
    - name: testing command 
      command: 'ping -c 5 8.8.8.8'
