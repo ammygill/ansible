@@ -1,9 +1,7 @@
 ---
-
-- hosts: localhost
+- name: testing oof the ping module 
+  hosts: localhost
+  # delegate_to: localhost 
   tasks:
-  - name: PERFORMING REACHABILITY TEST TO REMOTE DEVICE
-      command: 'ping -c5 localhost'
-      delegate_to: localhost
-    #  register: reachability_result_output
-    #  ignore_errors: yes
+   - name: testing command 
+     command: 'ping -4 -c5 8.8.8.8'
