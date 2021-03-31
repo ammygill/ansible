@@ -1,9 +1,9 @@
 ---
-- name: testing the ping 
-  hosts: all
-  tasks: 
+
+- hosts: localhost
+  tasks:
   - name: PERFORMING REACHABILITY TEST TO REMOTE DEVICE
-      command: ping -4 -c5 localhost
+      command: 'ping -4 -c5 localhost'
       delegate_to: localhost
       register: reachability_result_output
       ignore_errors: yes
