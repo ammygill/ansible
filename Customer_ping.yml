@@ -3,7 +3,7 @@
   hosts: all
   tasks: 
   - name: PERFORMING REACHABILITY TEST TO REMOTE DEVICE
-      command: ping -4 -c5 {{ inventory_hostname }}
+      command: ping -4 -c5 localhost
       delegate_to: localhost
       register: reachability_result_output
       ignore_errors: yes
