@@ -1,3 +1,0 @@
-#- name: netadmin
-#  src: git@git.szkb.ch:wrong/url-demo.git
-#  scm: git
