@@ -1,0 +1,12 @@
+---
+- name: testing of the play 
+  hosts: all
+  tasks: 
+  - name: Sync nrpe nagiosplug custom files
+    synchronize:
+     src: "/opt/test/abcd.txt"
+     dest: "/opt/test/xyz.txt"
+     rsync_opts:
+      - "--usermap=*:ec2-user"
+      - "--groupmap=*:root"
+      - "--chmod=0775"
