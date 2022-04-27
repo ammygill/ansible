@@ -2,4 +2,5 @@
 -  hosts: all
    tasks:
     - name: Testing the space between the paths
-      win_shell: ls 'C:\Program Files'
+      win_shell: ls 'C:\Program Files' @("/argument1", "/argument 2 with space")
+
