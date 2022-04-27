@@ -1,4 +1,5 @@
 ---
-- tasks:
+-  hosts: all
+   tasks:
     - name: Testing the space between the paths
       win_command: ls `C:\Program Files\`
