@@ -1,6 +1,4 @@
 ---
-- hosts: localhost
-  gather_facts: false
-  tasks:
+- tasks:
     - name: Testing the space between the paths
       win_command: ls `C:\Program Files\`
