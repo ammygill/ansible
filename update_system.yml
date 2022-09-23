@@ -1,0 +1,6 @@
+---
+- name: testing of update 
+  hosts: 192.168.122.99
+  tasks:
+  - name: shell module 
+    shell: yum update -y 
