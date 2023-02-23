@@ -1,0 +1,16 @@
+---
+
+- name: SNMP Report
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: Gather SNMP Info Parsed
+      cisco.nxos.nxos_snmp_server:
+        state: gathered
+      register: snmpparsed
+
+    - name: Debug SNMP
+      ansible.builtin.debug:
+        var: snmpparsed
