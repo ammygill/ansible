@@ -1,0 +1,14 @@
+- hosts: all
+  collections:
+    - fortinet.fortios
+  connection: httpapi
+  vars:
+   vdom: "root"
+   ansible_httpapi_use_ssl: yes
+   ansible_httpapi_validate_certs: no
+   ansible_httpapi_port: 443
+  tasks:
+  - name: Get multiple selectors' info concurrently
+    fortios_configuration_fact:
+      selectors:
+        - selector: firewall_address
