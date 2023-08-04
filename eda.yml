@@ -3,4 +3,4 @@
   tasks:
     - name: Just a dummy task
       ansible.builtin.debug:
-        msg: "{{ event }}"
+        msg: "{{ event.data }}"
