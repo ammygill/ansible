@@ -1,0 +1,15 @@
+- name: Webhook playbook
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Just a dummy task
+      ansible.builtin.debug:
+        msg: "Waiting for events from webhook"
+
+- name: Test task
+  hosts: localhost
+  tasks:
+    - name: Debug message
+      ansible.builtin.debug:
+        msg: "{{ event }}"  # Now the 'event' variable is available and should work fine and give the output here
+      ignore_errors: true
