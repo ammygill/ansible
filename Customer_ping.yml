@@ -1,6 +1,6 @@
 ---
 - name: testing oof the ping module 
-#  hosts: localhost
+  hosts: localhost
   #delegate_to: localhost 
   tasks:
    - name: Example from an Ansible Playbook
