@@ -1,0 +1,10 @@
+---
+- name: Testing of IIS service
+  hosts: all
+  tasks: 
+   - name: windows command to start the IIS service 
+     ansible.windows.win_command: whoami
+     register: whoami_out
+   - name: windows command to start the IIS service 
+     ansible.windows.win_command:  iireset /start
+     register: iireset
