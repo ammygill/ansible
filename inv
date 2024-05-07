@@ -1,5 +1,14 @@
-[grp]
-t2  test1=test1
+---
+leafs:
+  hosts:
+    leaf01:
+      ansible_host: 10.16.10.11
+    leaf02:
+      ansible_host: 10.16.10.12
 
-[all:vars]
-testing=test
+spines:
+  hosts:
+    spine01:
+      ansible_host: 10.16.10.13
+    spine02:
+      ansible_host: 10.16.10.14
